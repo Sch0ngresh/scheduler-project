@@ -1,0 +1,256 @@
+body {
+   
+  justify-content: space-evenly;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+}
+/* Schedule Grid HTML */
+.wrapper{
+  display: block;
+}
+header{
+  padding-left: 10px;
+}
+
+hr{
+  margin: 0 auto;
+ 
+}
+input{
+  text-align:center;
+  height: 20px;
+  font-size: .85em; 
+}
+label{
+  padding: 5px;  
+}
+.container1{
+  background: #deeedd;
+  width: 100%;
+  display: inline-flex;
+}
+.container{
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.column {
+  margin: 12px 2px;
+}
+.column-routes{
+  position: relative;
+  width: 150px;
+  min-height: 350px;
+  background: #9cb19f;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 15px 2px;
+  
+}
+.column-header, .empHeader, .column-header-routes{
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  max-height: 50px;
+  background: #c2e9bd;
+  margin: 3px;
+  border-radius: 4px;
+  border: .5px solid black;
+  box-shadow: 1px 1.5px #888888;
+}
+#rte_header{
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid black; 
+  padding: 10px; 
+}
+.column-header {
+  padding-top: 5px;
+}
+
+.empHeader{
+  padding-top: 15px;
+  font-size: .75em;
+  background: whitesmoke; 
+  color: lightgray; 
+}
+.column-header-routes{
+  position: relative;
+  left: -3.5px;
+  top: -3px;
+  padding-top: 15px;
+}
+
+.column-header{
+  font-size: .95em;
+}
+
+/* All Muuri Elements */
+.grid {
+  position: relative;
+  left: 3.5px;
+  width: 152px;
+  background: #e7f8e7;
+  border: 1px solid rgb(63, 61, 61);
+  /* display: inline-flex; */
+  min-height: 350px;
+  align-items: center;
+  border-radius: 4px;
+  
+
+}
+.item {
+  position: absolute;
+  padding: 5px;
+  width: 135px;
+  height: 100px;
+  line-height: 15px;
+  margin: 2px;
+  z-index: 1;
+  /* display: inline-flex; */
+}
+.item-route{
+  position: relative;
+  top: 45%;
+  text-align: center;
+  margin: 0 auto;
+}
+.item.muuri-item-hidden {
+  z-index: 0;
+}
+.item.muuri-item-releasing {
+  z-index: 2;
+}
+.item.muuri-item-dragging {
+  z-index: 3;
+}
+.item-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(192, 204, 192, 0.514);
+  font-size: 10px;
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1.25px solid rgb(58, 59, 57);
+  
+}
+.textDiv{
+  text-align: left;
+  padding: 20%;
+}
+
+.item.muuri-item-dragging .item-content,
+.item.muuri-item-releasing .item-content {
+  background: rgb(113, 113, 129);
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 11px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.empHeader:hover{
+  cursor: pointer;
+}
+
+
+
+/* Nav-Bar Items */
+
+.nav-bar{
+  padding:5px;
+  background: rgb(91, 97, 91);
+  margin: 0;
+}
+.round {
+  border-radius: 50%;
+}
+.previous, .next {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+/* Employee/Truck Modal Items */
+.modal {
+  display:none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(184, 204, 162, 0.726); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #82b474;
+  margin: 5px auto; 
+  border: 1px solid rgb(43, 42, 42);
+  width: 22%;
+  min-height: 50%;
+  border-radius: 3px;
+}
+#close{
+  float: right;
+  position: relative;
+  top: -15px;
+  left: -10px;
+  height: 50px;
+  font-size:50px;
+}
+button{
+  width: 50px;
+  height: 27px;
+}
+h3 { 
+  border-radius: 4px;  
+}
+#empEnter{
+  float: right;
+  position: relative;
+  top: 100px;
+  left: -8px;
+  width: 50px;
+  height: 25px;
+}
+#pipe{
+  font-weight: bolder;
+  color: lightgreen;
+}
+#close:hover{
+  cursor: pointer;
+}
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+.cancelbtn {
+     width: 100%;
+  }
+}
